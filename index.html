@@ -6,33 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plymouth Union Ranch House</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #eee;
-            margin-top: 20px;
-        }
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+        header { background: #4CAF50; color: white; padding: 20px 0; text-align: center; }
+        section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { text-align: center; padding: 10px; background: #eee; margin-top: 20px; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .gallery img { width: 280px; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        iframe { width: 100%; max-width: 800px; border: none; }
     </style>
 </head>
 <body>
@@ -49,6 +29,18 @@
             <li>Use on 2 weekends per month</li>
             <li>Up to 10 midweek days per month</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Photo Gallery</h2>
+        <div class="gallery">
+            <img src="house1.jpg" alt="House photo"><img src="house2.jpg" alt="House photo"><img src="house3.jpg" alt="House photo">
+        </div>
+    </section>
+
+    <section>
+        <h2>Availability Calendar</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?src=250233ee4b19a5804216de8cfe57516f13e26c60f44c3eb9a567dbb78e3f4c0f%40group.calendar.google.com&ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </section>
 
     <section>
