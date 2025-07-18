@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Plymouth Union Ski Club</title>
+  <title>Plymouth Union Ski House</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,6 +38,27 @@
 
     nav a:hover {
       background: #6fb8dd; /* lighter #2596be */
+    }
+
+    .nav-gallery {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 20px;
+    }
+
+    .nav-gallery img {
+      width: 100%;
+      max-width: 160px;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-gallery img:hover {
+      transform: scale(1.05);
     }
 
     main {
@@ -85,20 +106,6 @@
       color: #2596be;
     }
 
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .gallery img {
-      width: 280px;
-      height: auto;
-      border-radius: 4px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
     iframe {
       width: 100%;
       max-width: 800px;
@@ -113,19 +120,23 @@
       <li><a href="index.html">🏠 House Info</a></li>
       <li><a href="flyer.html">📄 Flyer</a></li>
     </ul>
+    <div class="nav-gallery">
+      <img src="house1.jpg" alt="House photo 1" />
+      <img src="house2.jpg" alt="House photo 2" />
+      <img src="house3.jpg" alt="House photo 3" />
+    </div>
   </nav>
 
   <main>
     <header>
       <img src="logo.png" alt="Ski House Logo">
-      <h1 style="text-align: center;">Plymouth Union Ski Club - Close to Killington and Okemo</h1>
+      <h1 style="text-align: center;">Plymouth Union Ski Share House - Close to Killington and Okemo</h1>
     </header>
 
     <section>
       <h2>Availability & Rates</h2>
-      <p>The club features shared access to 3 bedrooms and 2 lofts in a classic Vermont farmhouse — each area is suitable for a couple or two close friends.</p>
+      <p>The home features 3 bedrooms and 2 lofts in a classic Vermont farmhouse — each area is suitable for a couple or two close friends.</p>
       <p><strong>Warning - Construction is ongoing for the 2025–26 Season</strong></p>
-      <p><strong>Warning - Construction will entail excessive noise, dust and other significant and unpleasent occurances</strong></p>
       <p><strong>Flat Rate (Nov 1 – May 31) </strong> - 7 Months of shared use</p>
       <ul>
           <li><strong>Single occupancy:</strong> $3,750 per half-share</li>
@@ -160,11 +171,10 @@
           <li>Committed to skiing or riding daily during the season</li>
           <li>We mostly ski Killington, but are open to trips to Okemo, Sugerbush, and further</li>
           <li>We enjoy apres after a day of skiing, but we also know we need to get up early to get the best conditions</li>
-          
       </ul>
     </section>
-
-    <section>
+<!--
+   <section>
       <h2>Photo Gallery</h2>
       <div class="gallery">
         <img src="house1.jpg" alt="House photo">
@@ -172,7 +182,7 @@
         <img src="house3.jpg" alt="House photo">
       </div>
     </section>
-
+-->
     <section>
       <h2>Availability Calendar</h2>
       <iframe src="https://calendar.google.com/calendar/embed?src=250233ee4b19a5804216de8cfe57516f13e26c60f44c3eb9a567dbb78e3f4c0f%40group.calendar.google.com&ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no"></iframe>
