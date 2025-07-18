@@ -5,27 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Plymouth Union Ski House</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; display: flex; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
     nav {
       width: 200px;
-      background: #333;
+      background: #2f4f4f;
       color: white;
       min-height: 100vh;
       padding-top: 20px;
     }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      padding: 10px 20px;
+    }
+
     nav a {
-      display: block;
       color: white;
-      padding: 12px 20px;
       text-decoration: none;
+      display: block;
     }
+
     nav a:hover {
-      background: #575757;
+      background: #4CAF50;
     }
+
     main {
       flex: 1;
       padding: 0;
     }
+
     header {
       background: #4CAF50;
       color: white;
@@ -33,14 +52,17 @@
       display: flex;
       align-items: center;
     }
+
     header img {
       height: 120px;
       margin-right: 20px;
     }
+
     header h1 {
       margin: 0;
       font-size: 2em;
     }
+
     section {
       max-width: 900px;
       margin: 20px auto;
@@ -48,24 +70,28 @@
       background: white;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     footer {
       text-align: center;
       padding: 10px;
       background: #eee;
       margin-top: 20px;
     }
+
     .gallery {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
     }
+
     .gallery img {
       width: 280px;
       height: auto;
       border-radius: 4px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
+
     iframe {
       width: 100%;
       max-width: 800px;
@@ -74,13 +100,14 @@
   </style>
 </head>
 <body>
+
   <nav>
-    <a href="index.html">🏠 Home</a>
-    <a href="flyer.html">📄 Flyer</a>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="flyer.html">📄 Flyer</a></li>
+    </ul>
   </nav>
+
   <main>
-    <!-- your original content remains here, unchanged -->
-    <!-- (just paste your existing <header> to <footer> code block here) -->
-  </main>
-</body>
-</html>
+    <!-- The rest of your current content goes here (header, sections, footer) -->
+    <!-- DO NOT remove or modify your existing content -->
