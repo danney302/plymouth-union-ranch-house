@@ -1,94 +1,86 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Plymouth Union Ski House</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-        header { background: #4CAF50; color: white; padding: 20px; display: flex; align-items: center; }
-        header img { height: 120px; margin-right: 20px; }
-        header h1 { margin: 0; font-size: 2em; }
-        section { max-width: 900px; margin: 20px auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        footer { text-align: center; padding: 10px; background: #eee; margin-top: 20px; }
-        .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-        .gallery img { width: 280px; height: auto; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        iframe { width: 100%; max-width: 800px; border: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plymouth Union Ski House</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; display: flex; }
+    nav {
+      width: 200px;
+      background: #333;
+      color: white;
+      min-height: 100vh;
+      padding-top: 20px;
+    }
+    nav a {
+      display: block;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #575757;
+    }
+    main {
+      flex: 1;
+      padding: 0;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 120px;
+      margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #eee;
+      margin-top: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Ski House Logo">
-        <h1 style="text-align: center;">Plymouth Union Ski Share House - Close to Killington and Okemo</h1>
-    </header>
-
-<section>
-    <h2>Availability & Rates</h2>
-    <p>The home features 3 bedrooms and 2 lofts in a classic Vermont farmhouse — each area is suitable for a couple or two close friends.</p>
-    <p><strong>Warning - Construction is ongoing for the 2025–26 Season</strong></p>
-    <p><strong>Flat Rate (Nov 1 – May 31) </strong> - 7 Months of shared use</p>
-    <ul>
-        <li><strong>Single occupancy:</strong> $3,750 per half-share</li>
-        <li><strong>Double occupancy</strong> (two people sharing one sleeping area):$4,750 per half-share</li>
-    </ul>
-    <p>A half-share includes:</p>
-    <ul>
-        <li>Two set weekends per month (Fri–Sun nights)</li>
-        <li>Up to 10 midweek nights per month</li>
-        <li>Private room access, shared use of house amenities (kitchen, hot tub, etc.)</li>
-        <li>Guests welcome with prior approval: $65/night per guest</li>
-        <li>No full shares offered – only four total half-shares available guarantees plenty of room</li>
-        <li>Hot tub use and access - the hot tub is a best effort amenity, and will be available as conditions allow</li>
-    </ul>
-
-
-
-        <h2>More Info</h2>
-        <ul>
-            <li>New kitchen appliances and a new tankless water heater</li>
-            <li>New boiler for heating</li>
-            <li>Private hot tub</li>
-            <li>Wood stove and backup generator</li>
-            <li>Flat driveway with plowing included</li>
-            <li>Direct access to snowmobile trails</li>
-            <li>Only 8 miles to Killington Skyship Gondola</li>
-            <li>Only 10 miles to Okemo Mountain Resort</li>
-            <li>Just 100 yards to groceries, beer/wine, and a dispensary</li>
-        </ul>
-        <h2>Who we are</h2>
-        <ul>
-            <li>Skiers and snowboarders of all ages and abilities</li>
-            <li>We enjoy sharing our favorite sport with new and seasoned skiers and riders</li>
-            <li>Committed to skiing or riding daily during the season</li>
-            <li>We mostly ski Killington, but are open to trips to Okemo, Sugerbush, and further</li>
-            <li>We enjoy apres after a day of skiing, but we also know we need to get up early to get the best conditions</li>
-            
-        </ul>
-
-    </section>
-
-  
-
-    <section>
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <img src="house1.jpg" alt="House photo"><img src="house2.jpg" alt="House photo"><img src="house3.jpg" alt="House photo">
-        </div>
-    </section>
-
-    <section>
-        <h2>Availability Calendar</h2>
-        <iframe src="https://calendar.google.com/calendar/embed?src=250233ee4b19a5804216de8cfe57516f13e26c60f44c3eb9a567dbb78e3f4c0f%40group.calendar.google.com&ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>For inquiries, availability, or to schedule a visit, please email: <a href="mailto:danney302@gmail.com">danney302@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Plymouth Union Ranch House</p>
-    </footer>
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="flyer.html">📄 Flyer</a>
+  </nav>
+  <main>
+    <!-- your original content remains here, unchanged -->
+    <!-- (just paste your existing <header> to <footer> code block here) -->
+  </main>
 </body>
 </html>
