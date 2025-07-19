@@ -1,131 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ski Share Flyer – Plymouth Union House</title>
-  <style>
+<meta charset="UTF-8" />
+<title>Plymouth Union Ski Club Flyer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #222;
+    margin: 15px auto;
+    max-width: 680px;
+    padding: 10px 25px;
+    box-sizing: border-box;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header img {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: #2596be;
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0;
+  }
+
+  p.intro {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 12px 0 25px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .warning {
+    color: #b22222;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 0 25px 0;
+    line-height: 1.3;
+  }
+
+  strong.flat-rate {
+    display: block;
+    text-align: center;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  section ul {
+    flex: 1;
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    background: #eaf4fb;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+  }
+
+  section ul li {
+    margin-bottom: 8px;
+  }
+
+  section h2 {
+    width: 100%;
+    color: #2596be;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #2596be;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+
+  .qr-code {
+    text-align: center;
+    margin: 35px 0 20px;
+  }
+
+  .qr-code img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Print tweaks */
+  @media print {
     body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 40px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 10mm;
+      padding: 0;
+      max-width: none;
     }
-    h1, h2 {
-      color: #2596be;
+    section {
+      flex-direction: column;
     }
-    header img {
-      height: 100px;
-      display: block;
-      margin: 0 auto 10px auto;
+    section ul {
+      margin-bottom: 20px;
+      padding: 10px;
     }
-    .section {
-      margin-bottom: 30px;
+    .qr-code img {
+      width: 120px;
+      height: 120px;
     }
-    ul {
-      padding-left: 1px;
-    }
-    .highlight {
-      font-size: 1.2em;
-      font-weight: bold;
-    }
-    a {
-      color: #2596be;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .footer-link {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 1em;
-    }
-    .print-note {
-      font-size: 0.9em;
-      color: #888;
-    }
-    @media print {
-      a {
-        color: black;
-        text-decoration: none;
-      }
-      .print-note {
-        display: none;
-      }
-      .footer-link {
-        margin-top: 10px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
-  <header class="section" style="text-align: center;">
-    <img src="logo.png" alt="Ski House Logo"/>
-    <h1>Plymouth Union Ski Share House</h1>
-    <p>Located near Killington & Okemo • Vermont Ski Share for Winter 2025–26</p>
-  </header>
+<header>
+  <img src="logo.png" alt="Plymouth Union Ski Club Logo" />
+  <h1>Plymouth Union Ski Club</h1>
+</header>
 
-  <section class="section">
-    <h2>Availability & Rates</h2>
-    <p>The home features <strong>3 bedrooms and 2 lofts</strong> in a classic Vermont farmhouse — each area is suitable for a couple or two close friends.</p>
-    <p class="highlight">Warning - Construction is ongoing for the 2025–26 Season</p>
-    <p class="highlight">Flat Rate (Nov 1 – May 31) — 7 Months of shared use</p>
-    <ul>
-      <li><strong>Single occupancy:</strong> $3,750 per half-share</li>
-      <li><strong>Double occupancy</strong> (two people sharing one sleeping area): $4,750 per half-share</li>
-    </ul>
-    <p>A half-share includes:</p>
+<p class="intro">
+  A classic Vermont farmhouse ski club located just 8 miles from Killington and 10 miles from Okemo.  
+  Includes private bedrooms, hot tub, kitchen access, and beautiful mountain charm.  
+  Join our 2025–26 season!
+</p>
+
+<div class="warning">
+  Warning - Construction is ongoing for the 2025–26 Season.<br />
+  Construction will entail excessive noise, dust, and other significant and unpleasant occurrences.
+</div>
+
+<strong class="flat-rate">Flat Rate (Nov 1 – May 31) - 7 Months of shared use</strong>
+
+<section>
+  <div>
+    <h2>A half-share includes:</h2>
     <ul>
       <li>Two set weekends per month (Fri–Sun nights)</li>
       <li>Up to 10 midweek nights per month</li>
       <li>Private room access, shared use of house amenities (kitchen, hot tub, etc.)</li>
       <li>Guests welcome with prior approval: $65/night per guest</li>
-      <li>No full shares offered – only four total half-shares available guarantees plenty of room</li>
-      <li>Hot tub use and access - the hot tub is a best effort amenity, and will be available as conditions allow</li>
+      <li>No full shares offered – only four total half-shares available</li>
+      <li>Hot tub use and access - best effort basis</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div>
     <h2>More Info</h2>
     <ul>
-      <li>New kitchen appliances and a new tankless water heater</li>
+      <li>New kitchen appliances and tankless water heater</li>
       <li>New boiler for heating</li>
       <li>Private hot tub</li>
       <li>Wood stove and backup generator</li>
       <li>Flat driveway with plowing included</li>
       <li>Direct access to snowmobile trails</li>
-      <li>Only 8 miles to Killington Skyship Gondola</li>
-      <li>Only 10 miles to Okemo Mountain Resort</li>
-      <li>Just 100 yards to groceries, beer/wine, and a dispensary</li>
+      <li>100 yards to groceries, beer/wine, and dispensary</li>
     </ul>
-  </section>
+  </div>
 
-  <section class="section">
+  <div>
     <h2>Who we are</h2>
     <ul>
       <li>Skiers and snowboarders of all ages and abilities</li>
-      <li>We enjoy sharing our favorite sport with new and seasoned skiers and riders</li>
+      <li>Enjoy sharing our favorite sport with new and seasoned riders</li>
       <li>Committed to skiing or riding daily during the season</li>
-      <li>We mostly ski Killington, but are open to trips to Okemo, Sugarbush, and further</li>
-      <li>We enjoy apres after a day of skiing, but we also know we need to get up early to get the best conditions</li>
+      <li>Mostly ski Killington, open to Okemo, Sugarbush & beyond</li>
+      <li>Love après but know to rise early for best conditions</li>
     </ul>
-  </section>
-
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:danney302@gmail.com">danney302@gmail.com</a></p>
-    <p class="print-note">Visit the full site at: <a href="index.html">Plymouth Union Ski House Home</a></p>
-  </section>
-
-  <div class="footer-link">
-    <a href="index.html">← Back to Home Page</a>
   </div>
+</section>
+
+<div class="qr-code">
+  <p>Scan this QR code to learn more and check availability:</p>
+  <img src="qr.png" alt="QR code to main site" />
+</div>
 
 </body>
 </html>
